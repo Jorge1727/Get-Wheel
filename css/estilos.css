@@ -885,6 +885,10 @@ footer article a:hover {
         font-size: 11px;
     }
 
+    .eventos .list h3{
+        font-size: 12px;
+    }
+
     main {
         font-size: 11px;
     }
@@ -911,6 +915,7 @@ footer article a:hover {
         left: 100%;
         text-align: center;
         transition: all .5s;
+
     }
 
     
