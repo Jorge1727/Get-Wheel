@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /**border: 1px solid red;**/
 }
 
 
@@ -105,11 +105,7 @@ nav ul li {
     background-color: #ffffff;
 }
 
-.aboutus h1 {
-    position: relative;
-    margin: 40px 75px;
-    padding:0 4%;
-}
+
 
 .descripcion {
     position: absolute;
@@ -552,8 +548,12 @@ nav ul li ul li:hover {
 }
 
 .aboutus h1 {
+    position: relative;
+    margin: 40px 75px;
+    padding: 0 4%;
     font-size: 50px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 .aboutus p {
@@ -856,6 +856,12 @@ footer article a:hover {
         font-size: 30px;
     }
 
+    .scrollshop h2 {
+        position: absolute;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        left: 47px;
+        top: 80px
+    }
     
     .defBeasts p{
         font-size: 11px;
@@ -1029,6 +1035,121 @@ footer article a:hover {
     .scrollshop .next {
         height: 0;
         left: -40px;
+    }
+
+    .lambo {
+        height: 700px;
+    }
+    
+    .aboutus {
+        height: 500px;
+    }
+    
+    .descripcion {
+        height: 200px;
+    }
+    
+    .sabermas {
+        text-align: center;
+        position: absolute;
+        width: 50%;
+        top: 450px;
+        margin: 0 35%;
+        padding: 5px 1%;
+    }
+    
+
+    .eventos {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 1150px;
+    
+    }
+
+    .eventos .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 350px;
+    }
+    
+    .eventos .list article {
+        margin: 20px;
+        position: relative;
+        width: 75%;
+        height: 330px;
+    }
+    
+    .eventos .list .uno article{
+        position: relative;
+        margin: 0;
+        width: 100%;
+        height: 150px;
+        border: 2px solid white;
+    }
+    
+    .eventos .list .dos article{
+        position: relative;
+        margin: 0;
+        width: 100%;
+        height: 150px;
+        border: 2px solid white;
+    }
+    
+    .eventos .list .tres article{
+        position: relative;
+        margin: 0;
+        width: 100%;
+        height: 150px;
+        border: 2px solid white;
+    }
+    
+    
+    
+    .eventos .list .uno .reserva {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 22%;
+        width: 50%;
+        height: 30px;
+        bottom: 7px;
+        background-color: rgb(238, 104, 47);
+    }
+    
+    .eventos .list .dos .reserva {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 22%;
+        width: 50%;
+        height: 30px;
+        bottom: 7px;
+        background-color: rgb(238, 104, 47);
+    }
+    
+    .eventos .list .tres .reserva {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 22%;
+        width: 50%;
+        height: 30px;
+        bottom: 7px;
+        background-color: rgb(238, 104, 47);
+    }
+
+    .eventos h2{
+        position: absolute;
+        top: 30px;
     }
 }
 
