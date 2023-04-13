@@ -145,7 +145,6 @@ nav ul li {
 .scrollshop {
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 560px;
@@ -385,7 +384,9 @@ nav ul li {
     /* border: 1px solid red; */
 }
 
-.mail {
+/*----------- 3er Trimestre FORMS------------*/
+
+#mail {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -398,38 +399,54 @@ nav ul li {
     /* border: 1px solid red; */
 }
 
-
-.mail article {
-    width: 100%;
-    height: 80px;
-}
-
-.mail .linkRegistro {
+#mail .linkRegistro {
     padding: 20px;
-    border-top: 4px solid rgb(238, 104, 47);
 }
 
-.linkRegistro article{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(238, 104, 47);
-    /* border: 1px solid red; */
-}
-
-.linkRegistro p{
-    margin: 0px;
-}
-
-.mail img {
+#mail img {
     padding-top: 30px;
     height: 120px;
     width: 37px;
 }
+
+#mail input[type="email"]{
+	width:100%;
+    height: 120px;
+	padding:3px 10px;
+    border-bottom: 1px solid gainsboro;
+    border-left:  1px solid gainsboro;
+    border-right:  1px solid gainsboro;
+	border-top: 6px solid rgb(238, 104, 47);
+	background-color:#f6f6f6;
+	margin:8px 0;
+}
+
+#mail input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+/* validador */
+.check-ok {
+    color: rgb(7, 192, 7);
+  }
+   
+  input:invalid:hover ~ .check-ok {
+    display: inline;
+    color: red;
+  }
+
+  input:invalid ~ .check-ok {
+    display: none;
+    color: red;
+  }
+   
+  input:valid ~ .check-ok {
+    display: inline;
+  }
+  
+
+/*----------- 3er Trimestre FORMS------------*/
+
 
 .links {
     position: relative;
