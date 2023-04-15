@@ -1,0 +1,403 @@
+/*** Reseteo propiedades ***/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+
+/****** LAYOUT ******/
+
+/*** display / position / float ***/ /*** height / width / padding / border / margin ***/
+
+body {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    width: 100%;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+
+nav ul li {
+    position: relative;
+    float: left;
+    border-radius: 20px;
+    left: 35%;
+    width: 8.5%;
+    padding: 15px 0;
+    margin: 15px;
+}
+
+.logoMenu {
+    position: absolute;
+    left: 15%;
+    
+}
+
+.logoMenu img{
+    width: 80px;
+    height: 80px;
+}
+
+.contacto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+
+}
+
+.formulario {
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    width: 100%;
+    height: 650px;
+}
+
+
+.formulario .datos {
+    position: relative;
+    width: 95%;
+    height: 650px;
+    padding: 35px 0;
+}
+
+
+
+
+/****** NAV ******/
+nav {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li:hover {
+    background-color: #f1f1f1;
+}
+
+nav a {
+    color: #000000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+/* menu desplegable */
+
+nav ul li ul {
+    display:none;
+    position:absolute;
+    border-radius: 10px;
+    top:100%;
+    background:#eee;
+    text-align: left;
+    width:130px;
+    }
+
+    /* items del menu desplegable */
+
+nav ul li ul li {
+    float:none;
+    width: 110px;
+    margin-left: -40px;
+
+}
+
+/* enlaces de los items del menu desplegable */
+
+nav ul ul a {
+    padding:10px 15px;
+    width: 10px;
+
+}
+
+/* items del menu desplegable al pasar el ratón */
+
+nav ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+nav ul li ul li:hover {
+    background-color: #fcb786;
+
+}
+
+
+
+
+
+/********* MAIN *****************/
+
+
+.contacto {
+    background-color: #000000;
+}
+
+.contacto h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 18px;
+}
+
+
+
+
+.formulario .datos {
+    background-color: rgb(255, 255, 255);
+}
+
+.formulario .datos h3{
+    color: #000000;
+    font-size: 30px;    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 18px;
+}
+
+
+.formulario article a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px 10px;
+    font-size: 30px;
+}
+
+.formulario article a:hover {
+    font-weight:lighter;
+    color: white;
+}
+
+form{
+    position: absolute;
+    display:block;
+	width:100%;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form label{
+	width:72px;
+    margin-right: 10px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+
+form input[type="text"]{
+    width:27%;
+    padding:10px 10px;
+    border: #fff;
+    border-bottom:2px solid #f79729;
+    margin:8px 0;
+    display:inline-block;
+}
+
+form input[name="nombre"]{
+    margin-right: 5%;
+}
+
+form input[type="email"]{
+	width:70%;
+	padding:10px 10px;
+    border: #fff;
+	border-bottom:2px solid #f79729;
+	margin:8px 0;
+	display:inline-block;
+}
+
+/* validador */
+.check-ok {
+    color: rgb(7, 192, 7);
+  }
+   
+  input:invalid:hover ~ .check-ok {
+    display: inline;
+    color: red;
+  }
+
+  input:invalid ~ .check-ok {
+    display: inline;
+    color: red;
+  }
+   
+  input:valid ~ .check-ok {
+    display: inline;
+  }
+  
+
+form input[type="asunto"]{
+	width:70%;
+	padding:10px 10px;
+    border: #fff;
+	border-bottom:2px solid #f79729;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	background-color:#f8f8f8;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/** RESPONSIVE **/
+
+.checkbtn{
+    position: absolute;
+    color: #000000;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 70%;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+@media (max-width:952px){
+    
+    .logoMenu img{
+        margin-top: 5px;
+        width: 70px;
+        height: 70px
+        
+    }
+
+    /** NO HE USADO ESTO PORQUE AL HABERLO HECHO ANTES CON 
+    PORCENTAJES, SOLO HE MOFICICADO LA IMAGEN NO EL PADDING LEFT**
+    --- lo digo porque era un requisito para la nota.
+    .logoMenu{
+        padding-left: -5%;
+    }
+    **/
+
+    nav ul li {
+        margin-left: 30px;
+        font-size: 12px;
+    }
+
+    main {
+        font-size: 11px;
+    }
+
+    
+    .formulario {
+        flex-direction:column;
+        justify-content: center;
+        align-items: center ;
+        text-align: center;
+        width: 100%;
+        height: 650px;
+    }
+
+    /** PARA UN DESCUADRE EN FOOTER SECTION .INFO **/
+    .info p{
+        font-size: 10px;
+    }
+
+
+}
+
+
+@media (max-width:858px){
+
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 60%;
+        background-color:rgb(243, 126, 77);
+        top:80px;
+        left: 100%;
+        transition: all .5s;
+        border-bottom-left-radius: 10px;
+    }
+
+
+
+    nav ul li{
+        display: block;
+        width: 200px;
+        margin: 20px 0;
+        line-height: 30px;
+        left:0;
+    }
+
+    nav ul li ul{
+        visibility: hidden;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    #check:checked ~ ul{
+        left:60%;
+    }
+
+
+}
