@@ -436,9 +436,6 @@ form input[type="submit"]{
 	background-color:#000;
 } 
 
-form input[type="submit"]:hover{
-	cursor:pointer;
-}
 
 form input[value="Registrarme"]:hover{
 	color: rgb(167, 166, 166);
