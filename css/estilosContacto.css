@@ -213,9 +213,13 @@ form label{
 	display:inline-block;
 }
 
+form label[for="mensaje"]{
+    margin-top: 20px;
+}
+
 
 form input[type="text"]{
-    width:27%;
+    width:29%;
     padding:10px 10px;
     border: #fff;
     border-bottom:2px solid #f79729;
@@ -236,24 +240,9 @@ form input[type="email"]{
 	display:inline-block;
 }
 
-/* validador */
-.check-ok {
-    color: rgb(7, 192, 7);
-  }
-   
-  input:invalid:hover ~ .check-ok {
-    display: inline;
-    color: red;
-  }
-
-  input:invalid ~ .check-ok {
-    display: inline;
-    color: red;
-  }
-   
-  input:valid ~ .check-ok {
-    display: inline;
-  }
+.nyp{
+    display: none;
+}
   
 
 form input[type="asunto"]{
@@ -399,5 +388,16 @@ textarea{
         left:60%;
     }
 
+    .nyp{
+        display:inline;
+    }
+
+    form input[type="text"]{
+        width:70%
+    }
+    
+    form input[name="nombre"]{
+        margin-right: 0;
+    }
 
 }
