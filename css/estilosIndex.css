@@ -54,7 +54,7 @@ nav ul li {
     height: 45px;
     padding: 0 0;
     border-radius: 50px;
-    margin-top: 27px;
+    margin-top: 25px;
     margin-left: 10%;
 }
 
@@ -583,7 +583,7 @@ nav ul li ul li:hover {
 
 .Login img{
     width: 45px;
-    height: 45px;
+    height: 48px;
     border-radius: 50px;
 }
 
