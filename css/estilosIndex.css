@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /**border: 1px solid red;**/
+    /* border: 1px solid red; */
 }
 
 
@@ -47,6 +47,15 @@ nav ul li {
     width: 8.5%;
     padding: 15px 0;
     margin: 15px;
+}
+
+.Login{
+    width: 50px;
+    height: 45px;
+    padding: 0 0;
+    border-radius: 50px;
+    margin-top: 27px;
+    margin-left: 10%;
 }
 
 .logoMenu {
@@ -569,7 +578,19 @@ nav ul li ul {
 nav ul li ul li:hover {
     background-color: #fcb786;
 
-   }
+}
+
+.Login img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.Login a{
+    width: 40px;
+}
+
+
 
 /****** A ******/
 
@@ -884,6 +905,11 @@ footer article a:hover {
         font-size: 12px;
     }
 
+    .Login{
+        width: 40px;
+        margin-left: 5%;
+    }
+
     .lambo .aboutus p {
         font-size: 14px;
     }
@@ -1035,13 +1061,14 @@ footer article a:hover {
         border-bottom-left-radius: 10px;
     }
 
-    
+    .Login{
+        margin-left: 15%;
+    }
 
     nav ul li{
-        display: block;
-        width: 200px;
-        margin: 20px 0;
-        line-height: 30px;
+        display: inline-block;
+        width: 100px;
+        margin-left: 10%;
         left:0;
     }
 
