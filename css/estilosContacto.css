@@ -152,21 +152,22 @@ form input[value="Registrarme"]:hover{
 
 /* validador */
 .check-ok {
-    color: rgb(7, 192, 7);
+    color: rgb(255, 255, 255);
   }
    
-  input:invalid:hover ~ .check-ok {
+  input:invalid:focus ~ .check-ok {
     display: inline;
     color: red;
   }
 
-  input:invalid ~ .check-ok {
-    display: none;
+  input:invalid:focus ~ .check-ok {
+    display: inline;
     color: red;
   }
    
-  input:valid ~ .check-ok {
+  input:focus:valid ~ .check-ok {
     display: inline;
+    color: rgb(7, 192, 7);
   }
   
 
