@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/estilosLogin.css">
+    <link rel="stylesheet" href="../css/estilosRegistro.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
+        <title>Registro</title>
 </head>
 <body>
     <article class="Salir">
         <a href="../index.html"><h1>X</h1></a>
     </article>
     <form action="Login">
-        <h5>Log in</h5>
+        <h5>Sign up</h5>
         <input class="controls" type="text" name="usuario" value="" placeholder="username">
-        <input class="controls" type="password" name="contraseña" value="" placeholder="password">
-        <input class="buttons" type="submit" name="" value="Ingresar">
-        <p><a href="../Paginas/Registro.html">¿Aún no estás registrado?</a></p>
+        <input class="controls" type="password" name="contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,16}$" value="" placeholder="password">
+        <i class="comprueba">
+            <p>tiene que tener  tal tal</p>
+        </i>
+        <input class="controls" type="password" name="repite contraseña" value="" placeholder="repeat password">
+        <input class="buttons" type="submit" name="" value="Registrarme">
+        <p><a href="../Paginas/Login.html">¿Ya estás registrado?</a></p>
     </form>
 </body>
 </html>

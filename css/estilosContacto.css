@@ -41,6 +41,15 @@ nav ul li {
     margin: 15px;
 }
 
+.Login{
+    width: 50px;
+    height: 45px;
+    padding: 0 0;
+    border-radius: 50px;
+    margin-top: 25px;
+    margin-left: 10%;
+}
+
 .logoMenu {
     position: absolute;
     left: 15%;
@@ -169,6 +178,8 @@ form input[value="Registrarme"]:hover{
     display: inline;
     color: rgb(7, 192, 7);
   }
+
+  
   
 
 /*----------- 3er Trimestre FORMS------------*/
@@ -278,6 +289,16 @@ nav ul li:hover > ul {
 nav ul li ul li:hover {
     background-color: #fcb786;
 
+}
+
+.Login img{
+    width: 45px;
+    height: 48px;
+    border-radius: 50px;
+}
+
+.Login a{
+    width: 40px;
 }
 
 
@@ -492,6 +513,11 @@ footer article a:hover {
         font-size: 12px;
     }
 
+    .Login{
+        width: 40px;
+        margin-left: 5%;
+    }
+
     main {
         font-size: 11px;
     }
@@ -554,6 +580,10 @@ footer article a:hover {
 
     nav ul li a{
         font-size: 15px;
+    }
+
+    .Login{
+        margin-left: 15%;
     }
 
     .formulario{
