@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .Salir a{
@@ -88,6 +88,8 @@ form a{
 
 form input[value = "Ingresar"]:hover{
     cursor:pointer;
+    transition: 0.3s;
+    background-color: #000;
     color: #ffffff;
 }
 

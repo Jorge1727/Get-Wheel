@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .Salir a{
@@ -34,7 +34,7 @@ body{
 
 form{
     width:360px;
-    height: 400px;
+    min-height: 500px;
     background: rgb(255, 255, 255);
     margin: auto;
     margin-top: 10px;
@@ -69,16 +69,19 @@ form h5{
     height: 40px;
     background-color: rgb(236, 133, 16);
     border-radius: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin-bottom: 16px;
     margin-top: 15px;
 }
 
 form p{
     height: 40px;
+    margin-bottom: 10px;
     text-align: center;
-    border-bottom: 1px solid ;
+    font-size: small;
+    border-bottom: 1px solid;
 }
+
 
 form a{
     color: rgb(0, 0, 0);
@@ -88,7 +91,9 @@ form a{
 
 form input[value = "Registrarme"]:hover{
     cursor:pointer;
-    color: #000000;
+    transition: 0.3s;
+    background-color: #000;
+    color: #ffffff;
 }
 
 form a:hover{
@@ -106,6 +111,36 @@ input:invalid:focus ~ .comprueba {
     color: red;
 }
 
+input:invalid:focus[id="contraseña"]{
+    background: url("../images/botonrojo.png") no-repeat 98% center ;
+    background-size: 8px;
+}
+
+input:valid:focus[id="contraseña"]{
+    background: url("../images/botonVerde.png") no-repeat 98% center ;
+    background-size: 8px;
+}
+
 input:valid:focus ~ .comprueba {
     display: none;
+}
+
+.warnings{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    color: rgb(241, 133, 8);
+    font-size:small;
+    padding-top: 5px;
+    border-bottom: none;
+}
+
+input[type="checkbox"] + label {
+    font-weight: bold;
+    line-height: 3em;
+    color: #ccc;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label {
+    color: #de9100;
 }
