@@ -16,13 +16,13 @@
     <form action="Login" novalidate id="form">
         <h5>Sign up</h5>
         <input class="controls" type="text" name="" id="usuario" value="" placeholder="Username">
-        <input class="controls" type="password" name="" id="contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,16}$" value="" placeholder="Password">
+        <input class="controls" type="password" name="" id="contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])(?!\s)[a-zA-Z\d#$@!%&*?]{8,16}$" value="" placeholder="Password" required>
         <i class="comprueba">
             <p>Debes incluir minúscula, mayúscula, un número y un carácter especial(#$@!%&*?).</p>
         </i>
         <input class="controls" type="password" name="" id="repite contraseña" value="" placeholder="Repeat password">
 
-        <input type="checkbox" id="acepto" ><label>Acepto las condiciones de uso.</label>
+        <input type="checkbox" id="acepto" ><label>   Acepto las condiciones de uso.</label>
         
         <input class="buttons" type="submit" name="" value="Registrarme">
         <p><a href="../Paginas/Login.html">¿Ya estás registrado?</a></p>

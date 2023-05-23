@@ -556,7 +556,7 @@ footer article a:hover {
         display: flex;
         flex-direction: column;
         width: 50%;
-        height: 60%;
+        height: 61%;
         background-color:rgb(243, 126, 77);
         top:80px;
         left: 100%;
@@ -567,10 +567,9 @@ footer article a:hover {
 
 
     nav ul li{
-        display: block;
-        width: 200px;
-        margin: 20px 0;
-        line-height: 30px;
+        display: inline-block;
+        width: 100px;
+        margin-left: 10%;
         left:0;
     }
 

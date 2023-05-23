@@ -15,7 +15,7 @@ form.addEventListener("submit", e =>
 
     if(usuario.value.length < 6)
     {
-        warnings += "El usuario no es válido.<br>"
+        warnings += "El usuario no es válido. "
         entrar = true
     }
 

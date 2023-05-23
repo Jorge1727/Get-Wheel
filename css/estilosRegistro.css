@@ -59,9 +59,9 @@ form h5{
     border: 1px solid gray;
     margin-bottom: 10px;
     padding: 11px 10px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(255, 255, 255);
     font-size: 13px;
-    font-weight:lighter;
+    font-weight:bold;
 }
 
 .buttons {
@@ -111,7 +111,7 @@ input:invalid:focus ~ .comprueba {
     color: red;
 }
 
-input:invalid:focus[id="contraseña"]{
+#contraseña:focus:invalid{
     background: url("../images/botonrojo.png") no-repeat 98% center ;
     background-size: 8px;
 }
