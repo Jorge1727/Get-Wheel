@@ -48,8 +48,7 @@ form.addEventListener("submit", e =>
     }
     else 
     {
-        //parrafo.innerHTML= "Enviado."
-        
+        parrafo.innerHTML= "Enviado."
         
         const registro = {
             Usuario : usuario.value,
