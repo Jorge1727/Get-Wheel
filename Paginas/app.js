@@ -48,6 +48,16 @@ form.addEventListener("submit", e =>
     }
     else 
     {
-        parrafo.innerHTML= "Enviado."
+        //parrafo.innerHTML= "Enviado."
+        
+        
+        const registro = {
+            Usuario : usuario.value,
+            Contraseña : pass.value
+        };
+
+        var registro2 = JSON.stringify(registro);
+        alert (registro2);
     }
+
 })
