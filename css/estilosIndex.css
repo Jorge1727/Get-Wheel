@@ -42,7 +42,7 @@ nav {
 nav ul li {
     position: relative;
     float: left;
-    border-radius: 20px;
+    border-radius: 16px;
     left: 35%;
     width: 8.5%;
     padding: 15px 0;
@@ -77,6 +77,8 @@ nav ul li {
     height: 650px;
     background-image: url("../images/LykanRecortada-background.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #Lykan h1 {
@@ -100,6 +102,8 @@ nav ul li {
     height: 780px;
     background-image: url("../images/lambo-redimensionada.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .aboutus {
@@ -548,8 +552,16 @@ nav ul li ul {
     background:#eee;
     text-align: left;
     width:130px;
-   }
-   
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0;
+    opacity: .9;
+    }
+
+.vehiculoDesplegable{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
    /* items del menu desplegable */
    
    nav ul li ul li {
