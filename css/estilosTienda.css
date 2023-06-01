@@ -83,7 +83,6 @@ nav ul li {
 
 .descripcion h2{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-right: 100px;
 }
 
 .descripcion .info{
@@ -92,21 +91,49 @@ nav ul li {
 }
 
 .vehiculos {
-    position: relative;
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    text-align: center;
-    padding: 20px 50px;
+    padding: 50px 90px;
     width: 100%;
-    height: auto;
+    height:auto;
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;}
+
+.vehiculos a{
+    margin: 10px;
 }
 
 .vehiculos .prod{
-    width: 100px;
-    height: 150px;
-    margin: 20px;
-    background-color: gray;
+    position: relative;
+    display: inline-block;
+    --ancho:300px;
+    width: var(--ancho);
+    height: 280px;
+    margin:10px; 
+    text-align: center;
+    color: #000000;
+}
+
+.vehiculos .prod img{
+    width: var(--ancho);
+    height: calc(var(--ancho)/9*6);
+}
+
+section article::before {
+    content: "vista rapida";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    height: 2em;
+    color: #555;
+    font-size: 1.5em;
+    background-color: white;
+    opacity: 80%;
+    overflow: hidden;
+    transition: 0.5s;
+    transform: scaleY(0);
+    transform-origin: bottom;
 }
 
 
@@ -391,6 +418,32 @@ footer article a:hover {
         right: 0;
     }
 
+    .vehiculos {
+        padding: 50px 60px;
+        width: 100%;
+        height:auto;
+        overflow-y:scroll;
+        scroll-snap-type: y mandatory;}
+    
+    .vehiculos a{
+        margin: 10px;
+    }
+    
+    .vehiculos .prod{
+        position: relative;
+        display: inline-block;
+        --ancho:220px;
+        width: var(--ancho);
+        height: 200px;
+        margin:10px; 
+        background-color: #0f0f0f;
+        background-color: gray;
+    }
+    
+    .vehiculos .prod img{
+        width: var(--ancho);
+        height: calc(var(--ancho)/9*6);
+    }
     
 
 }
