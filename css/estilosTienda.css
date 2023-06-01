@@ -26,8 +26,13 @@ body {
 }
 
 header{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0;
     width: 100%;
     height: 80px;
+    z-index: 1;
 }
 
 
@@ -87,23 +92,24 @@ nav ul li {
     color: white;
 }
 
-.descripcion h2{
+h2{
+    font-size: 34px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.descripcion .info{
+.descripcion .informacion{
     position: absolute;
-    right: 200px;
+    right: 150px;
 }
 
 .vehiculos {
     padding: 50px 90px;
     width: 100%;
     height:auto;
-    overflow-y:scroll;
-    scroll-snap-type: y mandatory;}
+}
 
 .vehiculos a{
+    display: inline-block;
     margin: 10px;
 }
 
@@ -114,7 +120,6 @@ nav ul li {
     width: var(--ancho);
     height: 280px;
     margin:10px; 
-    text-align: center;
     color: #000000;
 }
 
@@ -123,7 +128,7 @@ nav ul li {
     height: calc(var(--ancho)/9*6);
 }
 
-section article::before {
+.vehiculos .prod::before {
     content: "vista rapida";
     display: flex;
     align-items: center;
@@ -131,9 +136,11 @@ section article::before {
     position: absolute;
     bottom: 20%;
     width: 100%;
-    height: 2em;
+    height: 50px;
+    margin-bottom: 20px;
     color: #555;
     font-size: 1.5em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: white;
     opacity: 80%;
     overflow: hidden;
@@ -142,6 +149,203 @@ section article::before {
     transform-origin: bottom;
 }
 
+.vehiculos .prod:hover::before{
+    transform: scaleY(1);
+}
+
+.vehiculos .prod .catOriginal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:1%;
+    color: white;
+    font-size: 1em;
+    background-color: rgb(0, 0, 0);
+}
+
+.vehiculos .prod .catBeast{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:1%;
+    color: white;
+    font-size: 1em;
+    background-color: orangered;
+}
+
+.vehiculos .prod p{
+    margin: 12px;
+}
+
+.prod .precio{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.descuento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    padding: 100px 0;
+    background-color: black;
+    color: white;
+}
+
+.descuento p{
+    margin-top: 50px;
+}
+
+.descuento a{
+    margin: 40px;
+    padding: 8px 12px;
+    background-color: rgb(238, 104, 47);
+    text-decoration: none;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.descuento a:hover{
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #ff7300;
+    font-style: italic;
+}
+
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+
+footer p{
+    margin: 30px 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+footer .bottom p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 10px;
+}
+
+
+.infof {
+    position: relative;
+    width: 30%;
+    height: 450px;
+    padding: 60px 5%;
+    background-color: #ffffff;
+    /* border: 1px solid red; */
+}
+
+/*----------- 3er Trimestre FORMS------------*/
+
+#mail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 450px;
+    padding: 60px 5%;
+    background-color: #ffffff;
+    /* border: 1px solid red; */
+}
+
+#mail .linkRegistro {
+    padding: 20px;
+}
+
+#mail img {
+    padding-top: 30px;
+    height: 120px;
+    width: 37px;
+}
+
+#mail input[type="email"]{
+	width:100%;
+    height: 120px;
+	padding:3px 10px;
+    border-bottom: 1px solid gainsboro;
+    border-left:  1px solid gainsboro;
+    border-right:  1px solid gainsboro;
+	border-top: 6px solid rgb(238, 104, 47);
+	background-color:#f6f6f6;
+	margin:8px 0;
+}
+
+#mail input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+
+form input[value="Registrarme"]:hover{
+	color: rgb(167, 166, 166);
+}
+
+/* validador */
+.check-ok {
+    color: rgb(255, 255, 255);
+  }
+   
+  input:invalid:focus ~ .check-ok {
+    display: inline;
+    color: red;
+  }
+
+  input:invalid:focus ~ .check-ok {
+    display: inline;
+    color: red;
+  }
+   
+  input:focus:valid ~ .check-ok {
+    display: inline;
+    color: rgb(7, 192, 7);
+  }
+
+
+/*----------- 3er Trimestre FORMS------------*/
+
+
+.links {
+    position: relative;
+    width: 25%;
+    height: 450px;
+    padding: 60px 5%;
+    background-color: #ffffff;
+    /* border: 1px solid red; */
+}
+
+.bottom {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    background-color: #000000;
+    /* border: 1px solid red; */
+
+}
 
 footer {
     position: relative;
@@ -321,7 +525,7 @@ footer article a:hover {
     }
 
     h2{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     /** NO HE USADO ESTO PORQUE AL HABERLO HECHO ANTES CON 
@@ -343,14 +547,14 @@ footer article a:hover {
     }
 
     main {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     
 
     /** PARA UN DESCUADRE EN FOOTER SECTION .INFO **/
-    .info p{
-        font-size: 12px;
+    .infof p{
+        font-size: 13px;
     }
 
 
@@ -360,7 +564,7 @@ footer article a:hover {
 @media (max-width:858px){
 
     h2{
-        font-size: 20px;
+        font-size: 25px;
         margin: 0;
         padding: auto;
     }
@@ -418,7 +622,7 @@ footer article a:hover {
 
     
 
-    .descripcion .info{
+    .descripcion .informacion{
         position: relative;
         margin-top: 50px;
         right: 0;
@@ -428,8 +632,7 @@ footer article a:hover {
         padding: 50px 60px;
         width: 100%;
         height:auto;
-        overflow-y:scroll;
-        scroll-snap-type: y mandatory;}
+    }
     
     .vehiculos a{
         margin: 10px;
@@ -438,12 +641,10 @@ footer article a:hover {
     .vehiculos .prod{
         position: relative;
         display: inline-block;
-        --ancho:220px;
+        --ancho:270px;
         width: var(--ancho);
-        height: 200px;
+        height: 250px;
         margin:10px; 
-        background-color: #0f0f0f;
-        background-color: gray;
     }
     
     .vehiculos .prod img{
@@ -451,5 +652,9 @@ footer article a:hover {
         height: calc(var(--ancho)/9*6);
     }
     
+    /* descuadre */
+    .infof p{
+        font-size: 10px;
+    }
 
 }
